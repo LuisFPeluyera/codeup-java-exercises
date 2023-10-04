@@ -73,7 +73,7 @@ public class MethodsExercises {
    public static void main(String[] args) {
 
 
-      myFactorial(10);
+//      myFactorial(10);
 
 
    }
