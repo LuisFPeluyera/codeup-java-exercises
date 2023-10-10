@@ -6,6 +6,6 @@ public class Free extends Users{
         super(userName, email);
     }
     public void welcomeMessage(){
-        System.out.println("Welcome free user!!!!!!!!");
+        System.out.printf("%s! WELCOME TO THE FREE VERSION!!!!!!!!%n",this.userName);
     }
 }

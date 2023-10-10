@@ -28,8 +28,13 @@ public class Users {
         this.password = password;
     }
 
+    public void setNameAndPassword(String name, String password){
+        this.setName(name);
+        this.setPassword(password);
+    }
+
     public void welcomeMessage(){
-        System.out.println("Welcome user!!!!!!!!");
+        System.out.printf("%s! WELCOME!!!!!!!!%n",this.userName);
     }
 
     public void userInfo(){
@@ -37,7 +42,7 @@ public class Users {
     }
 
     public void userNamePassword(){
-        System.out.printf("%nUSER INFORMATION %nYour user name: %s %nYour email: %s%n",this.getName(), this.getPassword());
+        System.out.printf("%nBELOW INFORMATION IS PROTECTED %nUSER INFORMATION %nName: %s %nPassword: %s%n",this.getName(), this.getPassword());
     }
 
 

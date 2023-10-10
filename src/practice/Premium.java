@@ -7,7 +7,7 @@ public class Premium extends Users{
     }
 
     public void welcomeMessage(){
-        System.out.println("Welcome premium user!!!!!!!!");
+        System.out.printf("%s! WELCOME TO THE PREMIUM VERSION!!!!!!!!%n",this.userName);
     }
 
 }
