@@ -1,44 +1,29 @@
 package practice;
 
+import java.util.Objects;
+import java.util.Scanner;
+
 public class CodeRunner{
 
 
 
     public static void main(String[] args){
 
-       Users user1 = new Users("myUserName1", "user1@email.com");
-       user1.setName("Jack");
-       user1.setPassword("jacksPassword");
+        boolean flag = true;
 
-       Users premiumUser1 = new Premium("premiumUserName", "premium@email.com");
-       premiumUser1.setName("John");
-       premiumUser1.setPassword("John'sPassword");
+        do {
+            Scanner myScanner = new Scanner(System.in);
+            System.out.println("Enter a Number:");
+            int userInput = myScanner.nextInt();
 
-       Premium premium1 = new Premium("premiumPremium","premiumPremium@premium.com");
+            System.out.println(userInput % 5 == 0 && userInput % 3 == 0 ? "FizzBuzz" : userInput % 5 == 0 ? "Fizz" : userInput % 3 == 0 ? "Buzz" : userInput);
+            myScanner.nextLine();
+            System.out.println("Would you like to continue? Y/N");
+            String input = myScanner.nextLine();
 
-       Users freeUser = new Free("freeUserName","freeUseremail@email.com");
-       freeUser.setNameAndPassword("Bryan", "bryanspassword");
-       freeUser.welcomeMessage();
-       freeUser.userInfo();
-       freeUser.userNamePassword();
+            flag = (Objects.equals(input, "Y") || Objects.equals(input, "y"));
 
-
-//       user1.welcomeMessage();
-//       user1.userInfo();
-//       user1.userNamePassword();
-//
-//       premiumUser1.welcomeMessage();
-//       premiumUser1.userInfo();
-//       premiumUser1.userNamePassword();
-
-//        premium1.userInfo();
-//        premium1.welcomeMessage();
-//        premium1.userNamePassword();
-//        premium1.setNameAndPassword("Pedro","pedrosPassword");
-//        premium1.userNamePassword();
-
-
-
+        } while(flag);
 
     }
 }

@@ -13,7 +13,6 @@ public class Input {
 
     public String getString(){
         String userInput = scanner.nextLine();
-        System.out.println(userInput);
         return userInput;
     }
 
@@ -65,7 +64,7 @@ public class Input {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         Input myInput = new Input();
 //        myInput.getString();
